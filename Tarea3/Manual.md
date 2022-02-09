@@ -42,9 +42,9 @@ Para agregar a propietaros del proyecto, se realizaron los siguientes pasos:
 #### Paso 1.
 Se selecciona la opción de IAM y administración y luego se selecciona la opcion de agregar, donde se ingresa el correo de los participantes.
 ![integrantes](https://github.com/Mocta-996/Redes_1S2022/blob/20fb555279237ef81500727ff105fa47ff1554bf/Tarea3/img/sc15.png)
-![creacion](https://github.com/Mocta-996/Redes_1S2022/blob/20fb555279237ef81500727ff105fa47ff1554bf/Tarea3/img/sc16.png)
+![integrantes](https://github.com/Mocta-996/Redes_1S2022/blob/20fb555279237ef81500727ff105fa47ff1554bf/Tarea3/img/sc16.png)
 Integrantes del grupo 12
-![creacion](https://github.com/Mocta-996/Redes_1S2022/blob/20fb555279237ef81500727ff105fa47ff1554bf/Tarea3/img/sc30.png)
+![integrantes](https://github.com/Mocta-996/Redes_1S2022/blob/c1f1da1a4a36c0ba5c65c0b3c93960635f1893a9/Tarea3/img/sc30.png)
 
 ---
 ## Configuración de la red privada
@@ -59,9 +59,9 @@ Comandos a ejecutar:
 - sudo bash openvpn-install.sh
 ![red](https://github.com/Mocta-996/Redes_1S2022/blob/20fb555279237ef81500727ff105fa47ff1554bf/Tarea3/img/sc19.png)
 #### Paso 2.
-Se deja la Ip address por default: 
+Se deja la IP address por default: 
 ![red](https://github.com/Mocta-996/Redes_1S2022/blob/20fb555279237ef81500727ff105fa47ff1554bf/Tarea3/img/sc20.png)
-Así tambien la ip publica:
+Así tambien la IP publica:
 ![red](https://github.com/Mocta-996/Redes_1S2022/blob/20fb555279237ef81500727ff105fa47ff1554bf/Tarea3/img/sc21.png) 
 Se selecciona  la opción 1 (UDP), el puerto 1194  de escucha del programa OpenVPN  y el DNS a utilizar es el de Google (3).
 ![red](https://github.com/Mocta-996/Redes_1S2022/blob/20fb555279237ef81500727ff105fa47ff1554bf/Tarea3/img/sc22.png) 
@@ -84,10 +84,10 @@ y con esto se conecta al servicio VPN
 ---
 ## Pruebas de conexión 
 ---
-- PC1 Maynor Octavio Piló Tuy
-Configuración del protocolo IP:
+##### PC1 Maynor Octavio Piló Tuy
+- Configuración del protocolo IP:
 ![integrantes](https://github.com/Mocta-996/Redes_1S2022/blob/20fb555279237ef81500727ff105fa47ff1554bf/Tarea3/img/sc28.png) 
-Pruebas de conexión PING:
+- Pruebas de conexión PING:
 ![integrantes](https://github.com/Mocta-996/Redes_1S2022/blob/20fb555279237ef81500727ff105fa47ff1554bf/Tarea3/img/sc29.png) 
 
 
