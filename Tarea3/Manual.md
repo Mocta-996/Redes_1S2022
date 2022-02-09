@@ -17,7 +17,7 @@
 ---
 #### Paso 1.
 Se crea un nuevo proyecto, con el nombre de Redes1Tarea3G12:
-![datostablasEr](https://github.com/Mocta-996/Redes_1S2022/blob/20fb555279237ef81500727ff105fa47ff1554bf/Tarea3/img/sc1.png)
+![datostablasEr](https://github.com/Mocta-996/Redes_1S2022/blob/20fb555279237ef81500727ff105fa47ff1554bf/Tarea3/img/sc1.png =100x20)
 #### Paso 2.
 Se habilita una nueva maquina virtual Compute Engine API:
 ![datostablasEr](https://github.com/Mocta-996/Redes_1S2022/blob/20fb555279237ef81500727ff105fa47ff1554bf/Tarea3/img/sc2.png)
