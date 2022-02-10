@@ -125,14 +125,17 @@ Seleccionar 1 y agregar un Nombre de cliente “marco”
 Creara un archivo llamado “marco.ovpn”
 
 Para visualizar el archivo debemos escribir ls y nos mostrara el archivo creado
+
 ![Ls](/Tarea3/img/mx5.png)
 
 
 Ahora descargaremos el archivo
+
 ![Ls](/Tarea3/img/mx6.png)
 
 
 Instalaremos la aplicación en un sistema operativo Windows 10 y agregaremos el archivo que descargamos previamente del servidor y se mostrara el estado de la conexión
+
 ![Aplicacion](/Tarea3/img/mx7.png)
 
 
@@ -141,6 +144,7 @@ Obteniendo dirección IP
 ```
 ipconfig
 ```
+
 ![Aplicacion](/Tarea3/img/mx8.png)
 
 
@@ -148,4 +152,5 @@ Realizaremos un ping a nuestro servidor
 ```
 ping 34.125.20.62
 ```
+
 ![Aplicacion](/Tarea3/img/mx9.png)
