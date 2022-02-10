@@ -92,5 +92,59 @@ y con esto se conecta al servicio VPN
 
 
 
+---
+## Configuración de la red privada (Marco)
+---
+Se recibió la invitación y se iniciando máquina, para esto daremos clic en “SSH”, tambien obtendremos la IP externa para configurar la VPM
+
+IP externa: 34.125.20.62
+
+
+![Consola](/img/mx1.png)
+
+
+Desde consola ejecutaremos el siguiente comando
+```
+sudo wget https://cubaelectronica.com/OpenVPN/openvpn-install.sh
+ls -lt
+```
+
+![Ejecucion](/img/mx2.png)
+
+Ejecutaremos el siguiente comando para iniciar el asistente
+
+```
+sudo bash openvpn-install.sh
+```
+![Archivo](/img/mx3.png)
+
+Seleccionar 1 y agregar un Nombre de cliente “marco”
+
+![Archivo](/img/mx4.png)
+
+Creara un archivo llamado “marco.ovpn”
+
+Para visualizar el archivo debemos escribir ls y nos mostrara el archivo creado
+![Ls](/img/mx5.png)
+
+
+Ahora descargaremos el archivo
+![Ls](/img/mx6.png)
+
+Instalaremos la aplicación en un sistema operativo Windows 10 y agregaremos el archivo que descargamos previamente del servidor y se mostrara el estado de la conexión
+![Aplicacion](/img/mx7.png)
+
+## Prueba de conexión desde computadora Marco Xocop
+Obteniendo dirección IP
+```
+ipconfig
+```
+![Aplicacion](/img/mx8.png)
+
+Realizaremos un ping a nuestro servidor
+```
+ping 34.125.20.62
+```
+![Aplicacion](/img/mx9.png)
 
 
