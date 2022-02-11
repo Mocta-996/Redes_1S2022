@@ -154,3 +154,70 @@ ping 34.125.20.62
 ```
 
 ![Aplicacion](/Tarea3/img/mx9.png)
+
+
+---
+
+## Configuración de la red privada (Cristian)
+
+---
+
+Se recibió la invitación y se iniciando máquina, para esto daremos clic en “SSH”, tambien obtendremos la IP externa para configurar la VPM
+
+IP externa: 34.125.123.62
+
+![Consola](/Tarea3/img/ch1.png)
+
+Desde consola ejecutaremos el siguiente comando
+
+```
+sudo wget https://cubaelectronica.com/OpenVPN/openvpn-install.sh
+ls -lt
+```
+
+![Ejecucion](/Tarea3/img/ch2.png)
+
+Ejecutaremos el siguiente comando para iniciar el asistente
+
+```
+sudo bash openvpn-install.sh
+```
+
+![Archivo](/Tarea3/img/ch3.png)
+
+Seleccionar 1 y agregar un Nombre de cliente “cristian”
+
+![Archivo](/Tarea3/img/ch4.png)
+
+Creara un archivo llamado “cristian.ovpn”
+
+Para visualizar el archivo debemos escribir ls y nos mostrara el archivo creado
+
+![Ls](/Tarea3/img/ch5.png)
+
+Ahora descargaremos el archivo
+
+![Ls](/Tarea3/img/ch6.png)
+
+Instalaremos la aplicación en un sistema operativo Windows 10 y agregaremos el archivo que descargamos previamente del servidor y se mostrara el estado de la conexión
+
+![Aplicacion](/Tarea3/img/ch7.png)
+
+## Prueba de conexión desde computadora Marco Xocop
+
+Obteniendo dirección IP
+
+```
+ipconfig
+```
+
+![Aplicacion](/Tarea3/img/ch8.png)
+
+Realizaremos un ping a nuestro servidor
+
+```
+ping 34.125.123.62
+```
+
+![Aplicacion](/Tarea3/img/ch9.png)
+
