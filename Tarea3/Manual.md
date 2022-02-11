@@ -203,7 +203,7 @@ Instalaremos la aplicación en un sistema operativo Windows 10 y agregaremos el 
 
 ![Aplicacion](/Tarea3/img/ch7.png)
 
-## Prueba de conexión desde computadora Marco Xocop
+## Prueba de conexión desde computadora Cristian
 
 Obteniendo dirección IP
 
