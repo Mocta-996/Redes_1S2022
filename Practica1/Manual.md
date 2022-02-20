@@ -23,7 +23,7 @@ Se creará un Proyecto en GNS3, se agregara los siguientes elementos
 - 1 Switch
 - 1 VPcs
 
-![elementos](/img/m1.png)
+![elementos](/Practica1/img/m1.png)
 
 
 ---
@@ -31,7 +31,7 @@ Se creará un Proyecto en GNS3, se agregara los siguientes elementos
 ---
 Se insertara una VPC y luego se le dara clic derecho en "start", despues abrir su consola con clic derecho y elegir "console" tal como se ve en la imagen
 
-![Consola](/img/m2.png)
+![Consola](/Practica1/img/m2.png)
 
 En este caso usaremos la siguiente configuración para el equipo
 
@@ -54,7 +54,7 @@ ip 192.168.112.10 255.255.255.0 192.168.112.1
    
 Asi se vera en la consola ya ejecutada 
 
-![Consola](/img/m3.png)
+![Consola](/Practica1/img/m3.png)
 
 
 
@@ -63,7 +63,7 @@ Asi se vera en la consola ya ejecutada
 ---
 Para configurar la nube "Cloud" seleccionaremos con clic derecho configure
 
-![Consola](/img/m4.png)
+![Consola](/Practica1/img/m4.png)
 
 Iremos a la pestaña "UDP tunnels"
 Ahi colocaremos la siguiente configuración para la nube "Cristian"
@@ -87,16 +87,16 @@ Remote port: 20100
 
 Debemos dar clic en "Add" para guardar la configuración y luego dar clic en "OK" para realizar la configuración para la nube "Cristian"
 
-![Consola](/img/m5.png)
+![Consola](/Practica1/img/m5.png)
 
 Debemos dar clic en "Add" para guardar la configuración y luego dar clic en "OK" para realizar la configuración para la nube "Maynor"
 
-![Consola](/img/m5.png)
+![Consola](/Practica1/img/m5.png)
 
 
 Depues se realizaran las conexiones entre los distintos componentes, es muy importante que al conectar el switch se conecte al puerto UDP tunnel1 o el nombre que se le haya asignado al configurarse la nube.
 
-![Conección](/img/m6.png)
+![Conección](/Practica1/img/m6.png)
 
 ---
 ## Pings entre los hosts
@@ -107,7 +107,7 @@ ping 192.168.112.20
 ```
 En la imagen se puede notar que si existe una conexión constante y estable.
 
-![Conección](/img/m7.png)
+![Conección](/Practica1/img/m7.png)
 
 
 Se realizara la conexion con la maquina de la nube de "Maynor"
@@ -116,4 +116,4 @@ ping 192.168.112.30
 ```
 En la imagen se puede notar que si existe una conexión constante y estable.
 
-![Conección](/img/m7.png)
+![Conección](/Practica1/img/m7.png)
