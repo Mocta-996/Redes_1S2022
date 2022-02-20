@@ -23,7 +23,7 @@ Se creará un Proyecto en GNS3, se agregara los siguientes elementos
 - 1 Switch
 - 1 VPcs
 
-![elementos](/Practica1/img/m1.png)
+![elementos](/Practica1/img/m1.PNG)
 
 
 ---
@@ -87,16 +87,16 @@ Remote port: 20100
 
 Debemos dar clic en "Add" para guardar la configuración y luego dar clic en "OK" para realizar la configuración para la nube "Cristian"
 
-![Consola](/Practica1/img/m5.png)
+![Consola](/Practica1/img/m5.PNG)
 
 Debemos dar clic en "Add" para guardar la configuración y luego dar clic en "OK" para realizar la configuración para la nube "Maynor"
 
-![Consola](/Practica1/img/m5.png)
+![Consola](/Practica1/img/m5.PNG)
 
 
 Depues se realizaran las conexiones entre los distintos componentes, es muy importante que al conectar el switch se conecte al puerto UDP tunnel1 o el nombre que se le haya asignado al configurarse la nube.
 
-![Conección](/Practica1/img/m6.png)
+![Conección](/Practica1/img/m6.PNG)
 
 ---
 ## Pings entre los hosts
@@ -107,7 +107,7 @@ ping 192.168.112.20
 ```
 En la imagen se puede notar que si existe una conexión constante y estable.
 
-![Conección](/Practica1/img/m7.png)
+![Conección](/Practica1/img/m7.PNG)
 
 
 Se realizara la conexion con la maquina de la nube de "Maynor"
@@ -116,4 +116,4 @@ ping 192.168.112.30
 ```
 En la imagen se puede notar que si existe una conexión constante y estable.
 
-![Conección](/Practica1/img/m7.png)
+![Conección](/Practica1/img/m7.PNG)
