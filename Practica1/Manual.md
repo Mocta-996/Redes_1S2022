@@ -59,7 +59,7 @@ Asi se vera en la consola ya ejecutada
 
 
 ---
-## Configuración de las nubes
+## Configuración de las nubes (Marco)
 ---
 Para configurar la nube "Cloud" seleccionaremos con clic derecho configure
 
@@ -99,7 +99,7 @@ Depues se realizaran las conexiones entre los distintos componentes, es muy impo
 ![Conección](/Practica1/img/m6.PNG)
 
 ---
-## Pings entre los hosts
+## Pings entre los hosts (Marco)
 ---
 Se realizara la conexion con la maquina de la nube de "Cristian"
 ```
