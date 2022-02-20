@@ -22,6 +22,7 @@ Se creará un Proyecto en GNS3, se agregara los siguientes elementos
 - 2 cloud
 - 1 Switch
 - 1 VPcs
+- VPN con Google Cloud (con los firewall configurados)
 
 ![elementos](/Practica1/img/m1.PNG)
 
