@@ -143,7 +143,7 @@ ip 192.168.112.30 255.255.255.0 192.168.112.1
 ```
 Ejecución de los datos ingresados.   
 
-![Consola](Practica1/img/mimg1.png)
+![Consola](https://github.com/Mocta-996/Redes_1S2022/blob/e3405bd4dc86782737338862fab7ce31c3668887/Practica1/img/mimg1.png)
 
 ---
 ## Configuración de las nubes (Maynor )
@@ -169,16 +169,16 @@ Remote port: 30500
 
 Configuración para la nube  "Cristian" 
 
-![Consola](Practica1/img/mimg2.png)
+![Consola](https://github.com/Mocta-996/Redes_1S2022/blob/e3405bd4dc86782737338862fab7ce31c3668887/Practica1/img/mimg2.png)
 
 Configuración para la nube "Marco"
 
-![Consola](Practica1/img/mimg3.png)
+![Consola](https://github.com/Mocta-996/Redes_1S2022/blob/e3405bd4dc86782737338862fab7ce31c3668887/Practica1/img/mimg3.png)
 
 
 Depues se realizaran las conexiones entre los distintos componentes.
 
-![Conección](Practica1/img/mimg4.png)
+![Conección](https://github.com/Mocta-996/Redes_1S2022/blob/e3405bd4dc86782737338862fab7ce31c3668887/Practica1/img/mimg4.png)
 
 ---
 ## Pings entre los hosts (Maynor)
@@ -187,11 +187,11 @@ Conexion con la maquina de la nube de "Cristian"
 ```
 ping 192.168.112.20
 ```
-![Conección](/Practica1/img/ping1.png)
+![Conección](https://github.com/Mocta-996/Redes_1S2022/blob/e3405bd4dc86782737338862fab7ce31c3668887/Practica1/img/ping1.png)
 
 Se realizara la conexion con la maquina de la nube de "Marco"
 ```
 ping 192.168.112.10
 ```
 
-![Conección](Practica1/img/ping2.png)
+![Conección](https://github.com/Mocta-996/Redes_1S2022/blob/e3405bd4dc86782737338862fab7ce31c3668887/Practica1/img/ping2.png)
