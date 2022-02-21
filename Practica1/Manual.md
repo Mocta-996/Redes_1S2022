@@ -118,3 +118,80 @@ ping 192.168.112.30
 En la imagen se puede notar que si existe una conexión constante.
 
 ![Conección](/Practica1/img/m8.PNG)
+
+
+---
+## Configuración de las VPCs (Maynor Octavio Piló Tuy)
+---
+Se inserta una VPC, se inicia y luego se realiza la siguiente configuración. 
+
+la mascara de subred:
+```
+255.255.255.0
+```
+y el gaterway
+```
+192.168.112.1 
+```
+la dirección de IP
+```
+192.168.112.30
+```
+Comando completo
+```
+ip 192.168.112.30 255.255.255.0 192.168.112.1
+```
+Ejecución de los datos ingresados.   
+
+![Consola](Practica1/img/mimg1.png)
+
+---
+## Configuración de las nubes (Maynor )
+---
+Se realizaron las siguientes configuraciones para las nubes, dicha configuracion se realizaron en la pestaña 
+a "UDP tunnels", y se guardan los cambios. 
+Configuración para la nube  "Cristian" 
+```
+Local port: 20600
+Remote host: 10.8.0.3
+Remote port: 30600
+```
+Configuración para la nube "Marco"
+```
+Local port: 20500
+Remote host: 10.8.0.2
+Remote port: 30500
+```
+
+- Donde local port será un puerto que elegimos
+- Remote host es la dirección Ip de la otra VPC que queremos alcanzar
+- Remote port será al puerto que nos conectaremos
+
+Configuración para la nube  "Cristian" 
+
+![Consola](Practica1/img/mimg2.png)
+
+Configuración para la nube "Marco"
+
+![Consola](Practica1/img/mimg3.png)
+
+
+Depues se realizaran las conexiones entre los distintos componentes.
+
+![Conección](Practica1/img/mimg4.png)
+
+---
+## Pings entre los hosts (Maynor)
+---
+Conexion con la maquina de la nube de "Cristian"
+```
+ping 192.168.112.20
+```
+![Conección](/Practica1/img/ping1.png)
+
+Se realizara la conexion con la maquina de la nube de "Marco"
+```
+ping 192.168.112.10
+```
+
+![Conección](Practica1/img/ping2.png)
