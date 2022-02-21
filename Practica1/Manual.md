@@ -77,9 +77,9 @@ Remote port: 20100
 Iremos a la pestaña "UDP tunnels"
 Ahi colocaremos la siguiente configuración para la nube "Maynor"
 ```
-Local port: 30100
+Local port: 30500
 Remote host: 10.8.0.4
-Remote port: 20100
+Remote port: 20500
 ```
 
 - Donde local port será un puerto que elegimos
@@ -92,7 +92,7 @@ Debemos dar clic en "Add" para guardar la configuración y luego dar clic en "OK
 
 Debemos dar clic en "Add" para guardar la configuración y luego dar clic en "OK" para realizar la configuración para la nube "Maynor"
 
-![Consola](/Practica1/img/m5.PNG)
+![Consola](/Practica1/img/m9.PNG)
 
 
 Depues se realizaran las conexiones entre los distintos componentes, es muy importante que al conectar el switch se conecte al puerto UDP tunnel1 o el nombre que se le haya asignado al configurarse la nube.
@@ -117,4 +117,4 @@ ping 192.168.112.30
 ```
 En la imagen se puede notar que si existe una conexión constante y estable.
 
-![Conección](/Practica1/img/m7.PNG)
+![Conección](/Practica1/img/m8.PNG)
