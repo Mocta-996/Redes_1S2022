@@ -115,6 +115,6 @@ Se realizara la conexion con la maquina de la nube de "Maynor"
 ```
 ping 192.168.112.30
 ```
-En la imagen se puede notar que si existe una conexión constante y estable.
+En la imagen se puede notar que si existe una conexión constante.
 
 ![Conección](/Practica1/img/m8.PNG)
