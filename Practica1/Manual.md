@@ -195,3 +195,81 @@ ping 192.168.112.10
 ```
 
 ![Conección](https://github.com/Mocta-996/Redes_1S2022/blob/e3405bd4dc86782737338862fab7ce31c3668887/Practica1/img/ping2.png)
+
+
+---
+## Configuración de las VPCs (Cristian)
+---
+Se inserta una VPC, se inicia y luego se realiza la siguiente configuración. 
+
+la mascara de subred:
+```
+255.255.255.0
+```
+y el gaterway
+```
+192.168.112.1 
+```
+la dirección de IP
+```
+192.168.112.20
+```
+Comando completo
+```
+ip 192.168.112.20 255.255.255.0 192.168.112.1
+```
+Ejecución de los datos ingresados.   
+
+![Consola](/Practica1/img/ch1.PNG)
+
+---
+## Configuración de las nubes (Cristian )
+---
+Se realizaron las siguientes configuraciones para las nubes, dicha configuracion se realizaron en la pestaña 
+a "UDP tunnels", y se guardan los cambios. 
+Configuración para la nube  "Maynor" 
+```
+Local port: 30600
+Remote host: 10.8.0.4
+Remote port: 20600
+```
+Configuración para la nube "Marco"
+```
+Local port: 20500
+Remote host: 10.8.0.2
+Remote port: 30500
+```
+
+- Donde local port será un puerto que elegimos
+- Remote host es la dirección Ip de la otra VPC que queremos alcanzar
+- Remote port será al puerto que nos conectaremos
+
+Configuración para la nube  "Maynor" 
+
+![Consola](/Practica1/img/ch2.PNG)
+
+Configuración para la nube "Marco"
+
+![Consola](/Practica1/img/ch3.PNG)
+
+
+Depues se realizaran las conexiones entre los distintos componentes.
+
+![Conección](/Practica1/img/ch4.PNG)
+
+---
+## Pings entre los hosts (Cristian)
+---
+Conexion con la maquina de la nube de "Maynor"
+```
+ping 192.168.112.30
+```
+![Conección](/Practica1/img/ch5.PNG)
+
+Se realizara la conexion con la maquina de la nube de "Marco"
+```
+ping 192.168.112.10
+```
+
+![Conección](/Practica1/img/ch6.PNG)
+
