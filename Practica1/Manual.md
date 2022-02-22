@@ -220,7 +220,7 @@ ip 192.168.112.20 255.255.255.0 192.168.112.1
 ```
 Ejecución de los datos ingresados.   
 
-![Consola](/Practica1/img/ch1.PNG)
+![Consola](/Practica1/img/ch1.png)
 
 ---
 ## Configuración de las nubes (Cristian )
@@ -246,16 +246,16 @@ Remote port: 30500
 
 Configuración para la nube  "Maynor" 
 
-![Consola](/Practica1/img/ch2.PNG)
+![Consola](https://github.com/Mocta-996/Redes_1S2022/blob/cef2701ab9185921cbd876527eb089007d2b20ea/Practica1/img/ch2.png)
 
 Configuración para la nube "Marco"
 
-![Consola](/Practica1/img/ch3.PNG)
+![Consola](/Practica1/img/ch3.png)
 
 
 Depues se realizaran las conexiones entre los distintos componentes.
 
-![Conección](/Practica1/img/ch4.PNG)
+![Conección](/Practica1/img/ch4.png)
 
 ---
 ## Pings entre los hosts (Cristian)
@@ -264,12 +264,12 @@ Conexion con la maquina de la nube de "Maynor"
 ```
 ping 192.168.112.30
 ```
-![Conección](/Practica1/img/ch5.PNG)
+![Conección](/Practica1/img/ch5.png)
 
 Se realizara la conexion con la maquina de la nube de "Marco"
 ```
 ping 192.168.112.10
 ```
 
-![Conección](/Practica1/img/ch6.PNG)
+![Conección](/Practica1/img/ch6.png)
 
