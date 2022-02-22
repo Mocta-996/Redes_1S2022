@@ -235,9 +235,9 @@ Remote port: 20600
 ```
 Configuración para la nube "Marco"
 ```
-Local port: 20500
+Local port: 20100
 Remote host: 10.8.0.2
-Remote port: 30500
+Remote port: 30100
 ```
 
 - Donde local port será un puerto que elegimos
