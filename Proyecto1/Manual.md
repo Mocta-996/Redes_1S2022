@@ -29,7 +29,7 @@ ip 192.168.121.10 255.255.255.0 192.168.121.1
 sh ip
 save
 ```
-![elementos](/Proyecto/img/1.png)
+![elementos](/Proyecto1/img/1.png)
 Conta_1
 ```
 ip 192.168.123.10 255.255.255.0 192.168.123.1
