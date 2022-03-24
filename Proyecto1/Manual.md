@@ -29,37 +29,52 @@ ip 192.168.121.10 255.255.255.0 192.168.121.1
 sh ip
 save
 ```
-![elementos](/Proyecto1/img/1.png)
+![elementos](/Proyecto1/img/2.png)
+
 Conta_1
 ```
 ip 192.168.123.10 255.255.255.0 192.168.123.1
 sh ip
 save
 ```
+![elementos](/Proyecto1/img/3.png)
+
+
 RRHH_2
 ```
 ip 192.168.121.20 255.255.255.0 192.168.121.1
 sh ip
 save
 ```
+![elementos](/Proyecto1/img/4.png)
+
+
 Conta_2
 ```
 ip 192.168.123.20 255.255.255.0 192.168.123.1
 sh ip
 save
 ```
+![elementos](/Proyecto1/img/5.png)
+
+
 Ventas_1
 ```
 ip 192.168.124.10 255.255.255.0 192.168.124.1
 sh ip
 save
 ```
+![elementos](/Proyecto1/img/6.png)
+
+
 Informatica_1
 ```
 ip 192.168.122.10 255.255.255.0 192.168.122.1
 sh ip
 save
 ```
+![elementos](/Proyecto1/img/1.png)
+
 
 ### ESW1
 ```
@@ -70,7 +85,8 @@ vtp mode client
 exit
 sh vtp st
 ```
-<24.png>
+![elementos](/Proyecto1/img/24.png)
+
 
 Configurando modo truncal
 ```
@@ -94,7 +110,9 @@ exit
 write
 sh int tr
 ```
-<25.png>
+![elementos](/Proyecto1/img/25.png)
+
+
 ### ESW2
 ```
 conf t
@@ -104,7 +122,8 @@ vtp mode client
 exit
 sh vtp st
 ```
-<18.png>
+![elementos](/Proyecto1/img/18.png)
+
 
 Configurando modo truncal
 ```
@@ -121,7 +140,7 @@ exit
 write
 sh int tr
 ```
-<19.png>
+![elementos](/Proyecto1/img/19.png)
 
 Configurando modo acceso
 ```
@@ -141,7 +160,7 @@ exit
 exit
 sh vlan-sw
 ```
-<20.png>
+![elementos](/Proyecto1/img/20.png)
 
 ### ESW3
 
@@ -153,7 +172,7 @@ vtp mode client
 exit
 sh vtp st
 ```
-<21.png>
+![elementos](/Proyecto1/img/21.png)
 
 Configurando modo truncal
 ```
@@ -170,7 +189,7 @@ exit
 write
 sh int tr
 ```
-<22.png>
+![elementos](/Proyecto1/img/22.png)
 
 Configurando modo acceso
 ```
@@ -192,7 +211,7 @@ exit
 exit
 sh vlan-sw
 ```
-<23.png>
+![elementos](/Proyecto1/img/23.png)
 
 ## Topologia 2
 
@@ -227,7 +246,7 @@ exit
 do sh vlan-sw
 exit
 ```
-<8.png>
+![elementos](/Proyecto1/img/8.png)
 
 ### Configuración de VTP (ESW4)
 Configurando ESW4 en modo servidor VTP
@@ -241,7 +260,7 @@ vtp version 2
 exit
 sh vtp st
 ```
-<9.png>
+![elementos](/Proyecto1/img/9.png)
 
 ### Configuración en modo truncal (ESW4)
 ```
@@ -262,7 +281,7 @@ do sh int tr
 exit
 write
 ```
-<10.png>
+![elementos](/Proyecto1/img/10.png)
 
 ### Configuración en modo cliente (ESW5, ESW6, ESW7)
 ESW5
@@ -274,7 +293,7 @@ vtp mode client
 exit
 sh vtp st
 ```
-<11.png>
+![elementos](/Proyecto1/img/11.png)
 
 
 Configuración modo troncal
@@ -292,7 +311,7 @@ exit
 write
 sh int tr
 ```
-<12.png>
+![elementos](/Proyecto1/img/12.png)
 
 ESW6
 ```
@@ -303,7 +322,7 @@ vtp mode client
 exit
 sh vtp st
 ```
-<13.png>
+![elementos](/Proyecto1/img/13.png)
 
 
 Configuración modo troncal
@@ -329,7 +348,7 @@ exit
 write
 sh int tr
 ```
-<14.png>
+![elementos](/Proyecto1/img/14.png)
 
 ESW7
 ```
@@ -340,7 +359,7 @@ vtp mode client
 exit
 sh vtp st
 ```
-<15.png>
+![elementos](/Proyecto1/img/15.png)
 
 Configuración modo troncal
 ```
@@ -361,7 +380,7 @@ exit
 write
 sh int tr
 ```
-<16.png>
+![elementos](/Proyecto1/img/16.png)
 
 Configuración modo acceso
 ```
@@ -373,7 +392,7 @@ exit
 exit
 sh vlan-sw
 ```
-<17.png>
+![elementos](/Proyecto1/img/17.png)
 
 ## Topologia 3
 
@@ -424,7 +443,7 @@ vtp mode client
 exit
 sh vtp st
 ```
-<26.png>
+![elementos](/Proyecto1/img/26.png)
 
 
 Configuración modo troncal
@@ -444,7 +463,7 @@ exit
 write
 sh int tr
 ```
-<27.png>
+![elementos](/Proyecto1/img/27.png)
 
 
 Configuración modo acceso
@@ -457,7 +476,7 @@ exit
 exit
 sh vlan-sw
 ```
-<28.png>
+![elementos](/Proyecto1/img/28.png)
 
 ### ESW9
 ```
@@ -468,7 +487,7 @@ vtp mode client
 exit
 sh vtp st
 ```
-<29.png>
+![elementos](/Proyecto1/img/29.png)
 
 
 Configuración modo troncal
@@ -493,7 +512,7 @@ exit
 write
 sh int tr
 ```
-<30.png>
+![elementos](/Proyecto1/img/30.png)
 
 Configuración modo acceso
 ```
@@ -505,7 +524,7 @@ exit
 exit
 sh vlan-sw
 ```
-<31.png>
+![elementos](/Proyecto1/img/31.png)
 
 ### ESW10
 ```
@@ -516,7 +535,7 @@ vtp mode client
 exit
 sh vtp st
 ```
-<32.png>
+![elementos](/Proyecto1/img/32.png)
 
 
 Configuración modo troncal
@@ -536,7 +555,7 @@ exit
 write
 sh int tr
 ```
-<33.png>
+![elementos](/Proyecto1/img/33.png)
 
 Configuración modo acceso
 ```
@@ -548,7 +567,7 @@ exit
 exit
 sh vlan-sw
 ```
-<34.png>
+![elementos](/Proyecto1/img/34.png)
 
 ### ESW11
 ```
@@ -559,7 +578,7 @@ vtp mode transparent
 exit
 sh vtp st
 ```
-<35.png>
+![elementos](/Proyecto1/img/35.png)
 
 
 Configuración modo troncal
@@ -579,7 +598,7 @@ exit
 write
 sh int tr
 ```
-<36.png>
+![elementos](/Proyecto1/img/36.png)
 
 Configuración modo acceso
 ```
@@ -591,4 +610,4 @@ exit
 exit
 sh vlan-sw
 ```
-<37.png>
+![elementos](/Proyecto1/img/37.png)
