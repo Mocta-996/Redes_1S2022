@@ -232,7 +232,9 @@ sh vlan-sw
 ![elementos](/Proyecto1/img/23.png)
 
 ## Topologia 2
-
+--
+![elementos](/Proyecto1/img/top2.png)
+--
 
 | VPCS | IP | Mascara de subred | Gateway | Comando |
 | ------ |------ |------ |------ | ------ |
