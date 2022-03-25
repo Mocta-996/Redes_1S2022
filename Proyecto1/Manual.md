@@ -628,3 +628,32 @@ exit
 sh vlan-sw
 ```
 ![elementos](/Proyecto1/img/37.png)
+
+## Ping a maquinas
+
+### Ping de topologia 1 a otras maquinas en topologia 2 y 3
+```
+ping 192.168.123.20
+```
+![elementos](/Proyecto1/img/Conta2.PNG)
+```
+ping 192.168.122.20
+```
+![elementos](/Proyecto1/img/Informatica1.PNG)
+```
+ping 192.168.121.20
+```
+![elementos](/Proyecto1/img/RRHH1.PNG)
+```
+ping 192.168.121.30
+```
+![elementos](/Proyecto1/img/RRHH2.PNG)
+```
+ping 192.168.124.20
+```
+![elementos](/Proyecto1/img/Ventas1.PNG)
+```
+ping 192.168.124.20
+```
+![elementos](/Proyecto1/img/Ventas_1.PNG)
+
