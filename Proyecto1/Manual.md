@@ -434,7 +434,7 @@ Remote Port : 4004
 ```
 ![elementos](/Proyecto1/img/conf_t2.png)
 
-Ping de la VPC  con las VPC de la topologia 1 y 3
+Ping de la VPC  con las VPC´S de la topologia 1 y 3
 --- 
 ```
 ping 192.168.122.10
@@ -703,4 +703,4 @@ Máquina 1
 ```
 Máquina 2 
 ```
-![elementos](/Proyecto1/img/red_fisica2.png)
+![elementos](/Proyecto1/img/red_fisica3.png)
