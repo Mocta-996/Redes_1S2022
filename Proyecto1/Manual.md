@@ -232,7 +232,7 @@ sh vlan-sw
 ![elementos](/Proyecto1/img/23.png)
 
 ## Topologia 2
---
+---
 ![elementos](/Proyecto1/img/top2.png)
 
 | VPCS | IP | Mascara de subred | Gateway | Comando |
@@ -422,6 +422,34 @@ Para la red de la topologia 3
 Ping de la VPC  con las VPC de la topologia 1 y 3
 ![elementos](/Proyecto1/img/Ping_1_3.png)
 
+---
+Configuración de  los puntos de red  de la Topologia 2
+---
+Para la red de la topologia 1
+--- 
+```
+Local Port : 4002
+Remote host: 10.8.0.3
+Remote Port : 4001
+```
+![elementos](/Proyecto1/img/conf_t1.png)
+
+Para la red de la topologia 3
+---
+```
+Local Port : 4003
+Remote host: 10.8.0.4
+Remote Port : 4004
+```
+![elementos](/Proyecto1/img/conf_t2.png)
+
+Ping de la VPC  con las VPC de la topologia 1 y 3
+--- 
+```
+ping 192.168.122.10
+ping 192.168.122.30
+```
+![elementos](/Proyecto1/img/Ping_1_3.png)
 
 ## Topologia 3
 
