@@ -234,7 +234,6 @@ sh vlan-sw
 ## Topologia 2
 --
 ![elementos](/Proyecto1/img/top2.png)
---
 
 | VPCS | IP | Mascara de subred | Gateway | Comando |
 | ------ |------ |------ |------ | ------ |
@@ -413,6 +412,16 @@ exit
 sh vlan-sw
 ```
 ![elementos](/Proyecto1/img/17.png)
+
+Configuración de  los puntos de red  de la Topologia 2
+Para la red de la topologia 1
+![elementos](/Proyecto1/img/conf_t1.png)
+Para la red de la topologia 3
+![elementos](/Proyecto1/img/conf_t2.png)
+
+Ping de la VPC  con las VPC de la topologia 1 y 3
+![elementos](/Proyecto1/img/Ping_1_3.png)
+
 
 ## Topologia 3
 
