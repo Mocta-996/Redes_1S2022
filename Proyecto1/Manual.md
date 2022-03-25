@@ -413,15 +413,6 @@ sh vlan-sw
 ```
 ![elementos](/Proyecto1/img/17.png)
 
-Configuración de  los puntos de red  de la Topologia 2
-Para la red de la topologia 1
-![elementos](/Proyecto1/img/conf_t1.png)
-Para la red de la topologia 3
-![elementos](/Proyecto1/img/conf_t2.png)
-
-Ping de la VPC  con las VPC de la topologia 1 y 3
-![elementos](/Proyecto1/img/Ping_1_3.png)
-
 ---
 Configuración de  los puntos de red  de la Topologia 2
 ---
@@ -697,3 +688,19 @@ ping 192.168.124.20
 ```
 ![elementos](/Proyecto1/img/Ventas_1.PNG)
 
+## Red Física 
+--- 
+### Conexión físia entre cuatro máquinas
+Computadoras conectadas a una  VPN formando una pequeña red donde
+estas tienen conexión y acceso a propiedades de red tradicionales como archivos compartidos por
+defecto.
+
+```
+Máquina 1 
+```
+![elementos](/Proyecto1/img/red_fisica1.png)
+
+```
+Máquina 2 
+```
+![elementos](/Proyecto1/img/red_fisica2.png)
