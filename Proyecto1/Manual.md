@@ -13,6 +13,7 @@
 | Marco Antonio Xocop Roquel | 201122934 |
 | Maynor Octavio Piló Tuy | 201531166 |
 | Cristian Estuardo Herrera Poncio | 201603198 |
+| Edgar Humberto Borrayo Bartolón | 201503702 |
 
 
 ### Detalles de VLAN
