@@ -1,6 +1,6 @@
 # **Manual** 
 ---
-### Tarea 3 
+### Proyecto 1 
 ### Universidad de San Carlos de Guatemala
 ### Facultad de Ingeniería 
 ### Laboratorio Redes de Computadoras 1 N
@@ -24,6 +24,58 @@
 | Informatica | 20 | 192.168.122.0/24 | 192.168.122.1 |
 | Contabilidad | 30 | 192.168.123.0/24 | 192.168.123.1 |
 | Ventas | 40 | 192.168.124.0/24 | 192.168.124.1 |
+
+## Configuración de Topologia
+Uno de los primeros pasos a realizar será el cargar la Imagen del swith a utilizar en el Emulador GNS3.
+Para lo cual deberá realizarse los siguientes pasos
+
+#### Paso 1
+Primero debe descargarse la imagen de Ethernetswith o Switch de capa 3 que se encuentra en el siguiente enlace:
+```
+https://drive.google.com/file/d/10810USuKu7M6s-_u6cIxek-6czPIt7XH/view?usp=sharing
+```
+
+#### Paso 2
+Luego abrimos el emulador GNS3 y en el menú "Editar" ubicado en la parte superior izquierda buscamos la opcion "Preferencias".
+
+![elementos](/Proyecto1/img/conf_top_1.JPG)
+
+#### Paso 3
+Se abrira la ventana de Preferencias, acá buscaremos del lado izquierdo de la ventana el menú "Dynamips" u daremos click en el sub-menu "IOS routers".
+
+Acá apareceran los Routes o Switchs capa 3 que se tengan configurados.
+![elementos](/Proyecto1/img/conf_top_2.JPG)
+
+#### Paso 4
+Como siguiente paso buscaremos el botón "Nuevo" o "New" y daremos click cn el boton para agregar un nuevo Router.
+
+![elementos](/Proyecto1/img/conf_top_3.JPG)
+
+#### Paso 5
+Se abrira una ventana, en la cual pedira que escoja la ruta de la Imagen que desea cargar. Para ello presionara el botón "Browse...".
+
+Esto le abrira una ventana en la cual podrá buscar la imagen en su computadora y seleccionarla.
+![elementos](/Proyecto1/img/conf_top_4.JPG)
+
+Al seleccionar la imagen se cargara la ruta en la pantalla y tendrá que presionar el boton "Siguiente" o "Next".
+
+![elementos](/Proyecto1/img/conf_top_5.JPG)
+
+#### Paso 6
+Luego se abrirar una pantalla en la cual le pedirá que ingrese en el campo "Name" o "Nombre" el nombre del Switch que esta cargando (esto queda a su discrecion).
+Adicional la pantalla le solicita que seleccione la Plataforma del Router que desea cargar, para este proyecto se utilizo la Plataforma "c3600".
+Posterio debé ingresar el chasis de la plataforma, el cual para este ejemplo se seleccionó "3640".
+
+Como punto Importante, recuerde seleccionar la opción "This is an EtherSwitch router".
+Por último presione "Siguiente" en la parte inferior derecha de la pantalla.
+
+![elementos](/Proyecto1/img/conf_top_6.JPG)
+
+#### Paso 7
+Último paso, acá debera comprobar que el router se encuentra configurado en su simulador, en la parte izquierda deberá aparecerle el logo del nuevo dispositivo.
+
+![elementos](/Proyecto1/img/conf_top_8.JPG)
+
 
 ## Topologia 1
 
