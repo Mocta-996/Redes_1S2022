@@ -774,3 +774,8 @@ Máquina 2 \\10.8.0.4\Ejemplo4
 Máquina 3 \\10.8.0.5\redes1_carpeta_compartida
 ```
 ![elementos](/Proyecto1/img/red_fisica4.png)
+
+```
+Máquina 4 \\10.8.0.2\redes1_carpeta_compartida
+```
+![elementos](/Proyecto1/img/red_fisica2.png)
