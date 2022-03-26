@@ -748,11 +748,16 @@ estas tienen conexión y acceso a propiedades de red tradicionales como archivos
 defecto.
 
 ```
-Máquina 1 
+Máquina 1  \\10.8.0.3\Compartir
 ```
 ![elementos](/Proyecto1/img/red_fisica1.png)
 
 ```
-Máquina 2 
+Máquina 2 \\10.8.0.4\Ejemplo4
 ```
 ![elementos](/Proyecto1/img/red_fisica3.png)
+
+```
+Máquina 2 \\10.8.0.5\redes1_carpeta_compartida
+```
+![elementos](/Proyecto1/img/red_fisica4.png)
