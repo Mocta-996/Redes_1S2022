@@ -495,7 +495,8 @@ ping 192.168.122.30
 ![elementos](/Proyecto1/img/Ping_1_3.png)
 
 ## Topologia 3
-
+---
+![elementos](/Proyecto1/img/topologia3.png)
 
 | VPCS | IP | Mascara de subred | Gateway | Comando |
 | ------ |------ |------ |------ | ------ |
@@ -711,6 +712,18 @@ exit
 sh vlan-sw
 ```
 ![elementos](/Proyecto1/img/37.png)
+---
+Configuración del punto de red  de la Topologia 3
+---
+Para la red de la topologia 2
+--- 
+```
+Local Port : 4004
+Remote host: 10.8.0.2
+Remote Port : 4003
+```
+![elementos](/Proyecto1/img/nube_top2.png)
+
 
 ## Ping a maquinas
 
@@ -758,6 +771,6 @@ Máquina 2 \\10.8.0.4\Ejemplo4
 ![elementos](/Proyecto1/img/red_fisica3.png)
 
 ```
-Máquina 2 \\10.8.0.5\redes1_carpeta_compartida
+Máquina 3 \\10.8.0.5\redes1_carpeta_compartida
 ```
 ![elementos](/Proyecto1/img/red_fisica4.png)
