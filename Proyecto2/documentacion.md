@@ -122,7 +122,7 @@ Se guardan las configuraciones
 exit 
 write memory 
 ```
-![elementos](/img/topo1_1.png)
+![elementos](/Proyecto2/img/topo1_1.JPG)
 
 R3
 Se configura la interface 0 la cual será la red interna de comunicacion.
@@ -164,7 +164,7 @@ Se guardan las configuraciones
 exit 
 write memory 
 ```
-![elementos](/Proyecto2/img/topo1_2.png)
+![elementos](/Proyecto2/img/topo1_2.JPG)
 
 
 R4
@@ -206,7 +206,7 @@ Se guardan las configuraciones
 exit 
 write memory 
 ```
-![elementos](/Proyecto2/img/topo1_3.png)
+![elementos](/Proyecto2/img/topo1_3.JPG)
 
 
 R5
@@ -248,11 +248,11 @@ Se guardan las configuraciones
 exit 
 write memory 
 ```
-![elementos](/Proyecto2/img/topo1_4.png)
+![elementos](/Proyecto2/img/topo1_4.JPG)
 
 ### Diseño de Topologia 1
 ---
-![elementos](/Proyecto2/img/topo1_final.png)
+![elementos](/Proyecto2/img/topo1_final.JPG)
 
 ## Topologia 2
 ---
