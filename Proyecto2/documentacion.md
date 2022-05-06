@@ -73,7 +73,7 @@ Por último presione "Siguiente" en la parte inferior derecha de la pantalla.
 ### Red WAN (Interconexión de centro de datos y oficina central)
 
 | Router | IP | Mask | VLAN | SALTO | Mask |
-| ------ |------ |------ |------ | ------ |
+| ------ |------ |------ |------ | ------ | ------ |
 | Router_2 | 10.12.0.5 | 255.255.192.0 | 10.12.64.5 | 192.168.124.0 | 255.255.255.0 |
 | Router_3 | 10.12.0.6 | 255.255.192.0 | 10.12.64.6 | 192.168.125.0 | 255.255.255.0 |
 | Router_4 | 10.12.0.7 | 255.255.192.0 | 10.12.128.6 | 192.168.124.0 | 255.255.255.0 |
@@ -122,7 +122,7 @@ Se guardan las configuraciones
 exit 
 write memory 
 ```
-![elementos](/Proyecto2/img/topo1_1.png)
+![elementos](/img/topo1_1.png)
 
 R3
 Se configura la interface 0 la cual será la red interna de comunicacion.
