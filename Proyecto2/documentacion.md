@@ -397,60 +397,175 @@ end
 ```
 
 ## Topologia 3
----
+
+### Dirección de red
+192.168.125.0/24
+
+### Mascara de red
+255	255	255	0
+
+### Cantidad de subredes
+4
+
+### subredes
+| Nombre |  VLAN |
+| --- | --- |
+| RHUMANOS  |  10 |
+| CONTABILIDAD  | 20 |
+| VENTAS  |  30 |
+| INFORMATICA  | 40  |
 
 
-## Ping a maquinas
+### Subnetting
 
-### Ping de topologia 1 a otras maquinas en topologia 2 y 3
+### IP Bae
 ```
-ping 192.168.123.20
+192.168.125.0
 ```
-![elementos](/Proyecto1/img/Conta2.PNG)
-```
-ping 192.168.122.20
-```
-![elementos](/Proyecto1/img/Informatica1.PNG)
-```
-ping 192.168.121.20
-```
-![elementos](/Proyecto1/img/RRHH1.PNG)
-```
-ping 192.168.121.30
-```
-![elementos](/Proyecto1/img/RRHH2.PNG)
-```
-ping 192.168.124.20
-```
-![elementos](/Proyecto1/img/Ventas1.PNG)
-```
-ping 192.168.124.20
-```
-![elementos](/Proyecto1/img/Ventas_1.PNG)
 
-## Red Física 
---- 
-### Conexión físia entre cuatro máquinas
-Computadoras conectadas a una  VPN formando una pequeña red donde
-estas tienen conexión y acceso a propiedades de red tradicionales como archivos compartidos por
-defecto.
+| Nombre |  VLAN | Salto  | Network  | Mask  |  P.Asignable | U.Asignable |  Broadcast | Host totales | Cantidad de hosts |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| RHUMANOS  |  10 | 64  | 192.168.125.0/26  | 255.255.255.192  | 192.168.125.192   | 192.168.125.62  |  	192.168.125.63 | 62 |  1 |
+| CONTABILIDAD  | 20 | 64  | 192.168.125.64/26  | 255.255.255.192  | 192.168.125.65   | 192.168.125.62  | 192.168.125.127  | 62 |  1 |
+| VENTAS  |  30 |  64 | 192.168.125.128/26  | 255.255.255.192  | 192.168.125.65   | 192.168.125.190 |  192.168.125.191 | 62 |  1 |
+| INFORMATICA  | 40  | 64  | 192.168.125.192/26  | 255.255.255.192  | 192.168.125.193  | 192.168.125.190  | 192.168.125.191 | 62 |  1 |
+
+
+### Configurando VPC's
+| No. | Nombre | VLAN | Dirección de red | Mascara | Gateway |
+| --- | --- | --- | --- | --- | --- |
+| 1 | RRHH_S | 10  | 192.168.125.10 | 255.255.255.192 | 192.168.125.62 |
+| 2 | CONTA_S | 20  | 192.168.125.75 | 255.255.255.192 | 192.168.125.126 |
+| 3 | VENTAS_S | 30 | 192.168.125.139 | 255.255.255.192 | 192.168.125.190 |
+| 4 | INFORMATICA_S | 40 | 192.168.125.198 | 255.255.255.192 | 192.168.125.254 |
+ 
+### Comandos
+### RHUMANOS
+```
+ip 192.168.125.10 255.255.255.192 192.168.125.62
+sh ip
+save
+```
+![elementos](/Proyecto2/img/p1.png)
+### CONTABILIDAD
 
 ```
-Máquina 1  \\10.8.0.3\Compartir
+ip 192.168.125.75 255.255.255.192 192.168.125.126
+sh ip
+save
 ```
-![elementos](/Proyecto1/img/red_fisica1.png)
+![elementos](/Proyecto2/img/p2.png)
+
+
+### VENTAS
 
 ```
-Máquina 2 \\10.8.0.4\Ejemplo4
+ip 192.168.125.139 255.255.255.192 192.168.125.190
+sh ip
+save
 ```
-![elementos](/Proyecto1/img/red_fisica3.png)
+![elementos](/Proyecto2/img/p3.png)
+
+### INFORMATICA
 
 ```
-Máquina 3 \\10.8.0.5\redes1_carpeta_compartida
+ip 192.168.125.198 255.255.255.192 192.168.125.254
+sh ip
+save
 ```
-![elementos](/Proyecto1/img/red_fisica4.png)
+![elementos](/Proyecto2/img/p4.png)
+
+### Configuracion de ESW2
+Creación de VLAN´s
+``` 
+conf t
+vlan 10
+name RHUMANOS
+vlan 20
+name CONTABILIDAD
+vlan 30
+name VENTAS
+vlan 40
+name INFORMATICA
+exit
+exit
+```
+![elementos](/Proyecto2/img/p5.png)
+
+Configuracion Modo Trunk
+```
+conf t
+int f1/3
+switchport mode trunk
+switchport trunk allowed vlan 1,10,20,30,40,1002-1005
+
+int f1/4
+switchport mode access
+switchport access vlan 10
+
+int f1/0
+switchport mode access
+switchport access vlan 20
+
+int f1/1
+switchport mode access
+switchport access vlan 30
+
+int f1/2
+switchport mode access
+switchport access vlan 40
+
+
+exit
+exit
+write
+```
+![elementos](/Proyecto2/img/p6.png)
+
+### Configuración Router 6
+Configuración de interfaces
+```
+conf t
+int f0/0.10
+encapsulation dot1Q 10
+ip address 192.168.125.62 255.255.255.192
+no shutdown
+exit
+int f0/0.20
+encapsulation dot1Q 20
+ip address 192.168.125.126 255.255.255.192
+no shutdown
+exit
+int f0/0.30
+encapsulation dot1Q 30
+ip address 192.168.125.190 255.255.255.192
+no shutdown
+exit
+int f0/0.40
+encapsulation dot1Q 40
+ip address 192.168.125.254 255.255.255.192
+no shutdown
+exit
+
+int f0/1
+ip address 10.2.0.18 255.255.255.252
+no shutdown
+exit
+
+int f3/0
+ip address 10.2.0.22 255.255.255.252
+no shutdown
+exit
 
 ```
-Máquina 4 \\10.8.0.2\redes1_carpeta_compartida
+![elementos](/Proyecto2/img/p7.png)
+
+### encender interfaces
 ```
-![elementos](/Proyecto1/img/red_fisica2.png)
+conf t
+int f0/0
+no shutdown
+exit
+exit
+sh ip int br
+```
