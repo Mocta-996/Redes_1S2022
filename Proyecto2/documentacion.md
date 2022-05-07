@@ -259,6 +259,10 @@ write memory
 ### Diseño de la Topologia 2  
 ---
 ![elementos](/Proyecto2/img/t2_t.png)
+---
+### Diseño de la Topologia 3
+---
+![elementos](/Proyecto2/img/p8.png)
 
 ### Tabla del resultado del subnetting
 ####  Ip base 
@@ -418,7 +422,7 @@ end
 
 ### Subnetting
 
-### IP Bae
+### IP Base
 ```
 192.168.125.0
 ```
