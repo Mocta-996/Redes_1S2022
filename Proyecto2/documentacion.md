@@ -1,6 +1,6 @@
 # **Manual** 
 ---
-### Proyecto 1 
+### Proyecto 2
 ### Universidad de San Carlos de Guatemala
 ### Facultad de Ingeniería 
 ### Laboratorio Redes de Computadoras 1 N
@@ -256,6 +256,145 @@ write memory
 
 ## Topologia 2
 ---
+### Diseño de la Topologia 2  
+---
+![elementos](/Proyecto2/img/t2_t.png)
+
+### Tabla del resultado del subnetting
+####  Ip base 
+```
+192.168.124.0/24
+```
+
+| VLAN | Salto | Network |  Mask           | P.Asignable     | U.Asignable     |Broadcast        | Host totales |Cantidad de hosts |
+| ---- | ----- | ------- | --------------- | --------------- | --------------- | --------------- | ------------ | ---------------- |
+| 10   |  224  | D       | 255.255.255.224 | 192.168.124.193 | 192.168.124.222 | 192.168.124.223 |  32          | 30               |
+| 20   |  240  | D       | 255.255.255.240 | 192.168.124.225 | 192.168.124.238 | 192.168.124.239 |  16          | 14               |
+| 30   |  128  | D       | 255.255.255.128 | 192.168.124.1   | 192.168.124.126 | 192.168.124.127 |  128         | 126              |
+| 40   |  192  | D       | 255.255.255.192 | 192.168.124.129 | 192.168.124.190 | 192.168.124.191 |  64          | 62               |
+
+### Configuracion de VPC´S
+---
+
+| NO  | Nombre      | VLAN | Dirección de red| Mascara         | Gateway         |
+| --- | ----------- | ---- | --------------- | --------------- | --------------- |
+| 1   | RRHH        | 10   | 192.168.124.193 | 255.255.255.224 | 192.168.124.222 |
+| 2   | CONTA       | 20   | 192.168.124.225 | 255.255.255.240 | 192.168.124.238 |
+| 3   | VENTAS      | 30   | 192.168.124.1   | 255.255.255.128 | 192.168.124.126 |
+| 4   | INFORMATICA | 40   | 192.168.124.129 | 255.255.255.192 | 192.168.124.190 |
+
+####  VPC ventas
+```
+ip 192.168.124.1 255.255.255.128 192.168.124.126
+save
+```
+####  VPC Contabilidad 
+```
+ip 192.168.124.225 255.255.255.240 192.168.124.238
+save
+```
+####  VPC Recursos Humanos
+```
+ip 192.168.124.193 255.255.255.224 192.168.124.222
+save
+```
+####  VPC Informatica
+```
+ip 192.168.124.129 255.255.255.192 192.168.124.190
+save
+```
+### Configuracion de Switchs
+---
+#### Configuracion Switch 1
+---
+![elementos](/Proyecto2/img/t2_sw1.png)
+#### Configuracion Switch 2
+---
+![elementos](/Proyecto2/img/t2_sw2.png)
+
+### Configuracion de ESW1T2
+---
+#### Creación de VLAN´s
+```
+conf t
+VLAN 10
+name RHUMANOS
+VLAN 20
+name CONTABILIDAD
+VLAN 30
+name VENTAS
+VLAN 40
+name INFORMATICA
+exit
+exit
+
+write
+```
+#### Configuracion Modo Trunk
+```
+conf t
+int f1/0
+switchport mode trunk
+switchport trunk allowed vlan 1,10,20,30,40,1002-1005
+exit
+
+int f1/1
+switchport mode trunk
+switchport trunk allowed vlan 1,20,30,1002-1005
+exit
+
+int f1/2
+switchport mode trunk
+switchport trunk allowed vlan 1,10,40,1002-1005
+exit
+exit
+
+write
+```
+### Configuracion de Router 1
+---
+#### Configuración de interfaces
+```
+conf t 
+int f0/0.10 
+encapsulation dot1Q 10
+ip address 192.168.124.222 255.255.255.224
+no shutdown 
+exit
+
+int f0/0.20 
+encapsulation dot1Q 20
+ip address 192.168.124.238 255.255.255.240	
+no shutdown 
+exit
+
+int f0/0.30 
+encapsulation dot1Q 30
+ip address 192.168.124.126 255.255.255.128	
+no shutdown 
+exit
+
+int f0/0.40 
+encapsulation dot1Q 40
+ip address 192.168.124.190 255.255.255.192	
+no shutdown 
+exit
+
+int f2/0
+ip addres
+end 
+```
+#### Configuración de ruteo estatico
+```
+conf t 
+route ip destino mascara ip_de_comunicaicon
+route ip destino mascara ip_de_comunicaicon
+route ip destino mascara ip_de_comunicaicon
+route ip destino mascara ip_de_comunicaicon
+route ip destino mascara ip_de_comunicaicon
+route ip destino mascara ip_de_comunicaicon
+end
+```
 
 ## Topologia 3
 ---
