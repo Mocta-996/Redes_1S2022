@@ -1,0 +1,105 @@
+TOPOLOGIA 2 192.168.124.0/24
+
+Subred	Nº de Hosts	IP de red		Máscara		Primer 	Host	Último Host		Broadcast
+ventas	126		192.168.124.0 /25	255.255.255.128	192.168.124.1	192.168.124.126		192.168.124.127	
+inform 	62		192.168.124.128 /26	255.255.255.192	192.168.124.129	192.168.124.190		192.168.124.191
+r. Hum	30		192.168.124.192 /27	255.255.255.224	192.168.124.193	192.168.124.222		192.168.124.223
+contab	14		192.168.124.224 /28	255.255.255.240	192.168.124.225	192.168.124.238		192.168.124.239
+
+====================================  VPCST2 ====================================
+VLAN		#VLAN	Dirección de red	mascara		Gateway
+1.RRHH		10	192.168.124.193		255.255.255.224	192.168.124.222
+2.CONTA		20	192.168.124.225		255.255.255.240	192.168.124.238
+3.VENTAS	30	192.168.124.1 	 	255.255.255.128	192.168.124.126
+4.INFORMATICA	40	192.168.124.129		255.255.255.192	192.168.124.190
+
+ventas
+ip 192.168.124.1 255.255.255.128 192.168.124.126
+save
+
+contabilidad 
+ip 192.168.124.225 255.255.255.240 192.168.124.238
+save
+
+recursos humanos
+ip 192.168.124.193 255.255.255.224 192.168.124.222
+save
+
+informatica
+ip 192.168.124.129 255.255.255.192 192.168.124.190
+save
+
+==================================== ESW1T2 ====================================
+----- creacion vlans
+conf t
+VLAN 10
+name RHUMANOS
+VLAN 20
+name CONTABILIDAD
+VLAN 30
+name VENTAS
+VLAN 40
+name INFORMATICA
+exit
+exit
+----- configurando modo troncal
+conf t
+int f1/0
+switchport mode trunk
+switchport trunk allowed vlan 1,10,20,30,40,1002-1005
+exit
+
+int f1/1
+switchport mode trunk
+switchport trunk allowed vlan 1,20,30,1002-1005
+exit
+
+int f1/2
+switchport mode trunk
+switchport trunk allowed vlan 1,10,40,1002-1005
+exit
+exit
+
+write
+
+==================================== ROUTER 1 ====================================
+conf t 
+int f0/0.10 
+encapsulation dot1Q 10
+ip address 192.168.124.222 255.255.255.224
+no shutdown 
+exit
+
+int f0/0.20 
+encapsulation dot1Q 20
+ip address 192.168.124.238 255.255.255.240	
+no shutdown 
+exit
+
+int f0/0.30 
+encapsulation dot1Q 30
+ip address 192.168.124.126 255.255.255.128	
+no shutdown 
+exit
+
+int f0/0.40 
+encapsulation dot1Q 40
+ip address 192.168.124.190 255.255.255.192	
+no shutdown 
+exit
+
+int f2/0
+ip addres
+end 
+
+-- ruteo
+
+conf t 
+route ip destino mascara ip_de_comunicaicon
+route ip destino mascara ip_de_comunicaicon
+route ip destino mascara ip_de_comunicaicon
+route ip destino mascara ip_de_comunicaicon
+route ip destino mascara ip_de_comunicaicon
+route ip destino mascara ip_de_comunicaicon
+end
+
