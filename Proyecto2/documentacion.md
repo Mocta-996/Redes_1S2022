@@ -384,19 +384,27 @@ ip address 192.168.124.190 255.255.255.192
 no shutdown 
 exit
 
-int f2/0
-ip addres
+conf t 
+int f1/0
+ip addres 10.12.0.2 255.255.255.252
+no shutdown
 end 
+
+conf t
+int f2/0
+ip addres 10.12.0.6 255.255.255.252
+no shutdown
+end 	
 ```
 #### Configuración de ruteo estatico
 ```
 conf t 
-route ip destino mascara ip_de_comunicaicon
-route ip destino mascara ip_de_comunicaicon
-route ip destino mascara ip_de_comunicaicon
-route ip destino mascara ip_de_comunicaicon
-route ip destino mascara ip_de_comunicaicon
-route ip destino mascara ip_de_comunicaicon
+ip route  10.12.0.8 255.255.255.252 10.12.0.1
+ip route  10.12.0.12 255.255.255.252 10.12.0.5
+ip route  10.12.0.16 255.255.255.252 10.12.0.1 
+ip route  10.12.0.20 255.255.255.252 10.12.0.5
+ip route  192.168.125.0 255.255.255.0 10.12.0.1
+ip route  192.168.125.0 255.255.255.0 10.12.0.5
 end
 ```
 
